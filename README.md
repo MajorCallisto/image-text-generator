@@ -15,13 +15,11 @@ Some generated images
 # usage
 
 ```bash
-npm i @lisnote/image-generator
+npm i @majorcallisto/image-text-generator
 ```
 
 ```javascript
 const imageGenerator = require("@lisnote/image-generator");
-
-imageGenerator(1920, 1080).toFile("./test.png");
 
 for (let i = 0; i < 5; i++) {
   imageTextGenerator(640, 640, { fontSize: 96, wrapBreak: 8 }).toFile(
