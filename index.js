@@ -91,10 +91,5 @@ const randomHSL = (minH, minS, minL, maxH, maxS, maxL) => {
 const randomNumber = (num = 1) => {
   return Math.random() * num;
 };
-for (let i = 0; i < 5; i++) {
-  sharpDecorator(640, 640, { fontSize: 96, wrapBreak: 8 }).toFile(
-    `./sample_${i}.png`
-  );
-}
 
 module.exports = sharpDecorator;
