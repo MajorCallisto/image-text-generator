@@ -4,13 +4,13 @@ Some generated images
 
 ![sample_0](./sample/sample_0.png)
 
-![sample_1](./sample/sample_0.png)
+![sample_1](./sample/sample_1.png)
 
-![sample_2](./sample/sample_0.png)
+![sample_2](./sample/sample_2.png)
 
-![sample_3](./sample/sample_0.png)
+![sample_3](./sample/sample_3.png)
 
-![sample_4](./sample/sample_0.png)
+![sample_4](./sample/sample_4.png)
 
 # usage
 
