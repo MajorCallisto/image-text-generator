@@ -1,5 +1,5 @@
 {
-  "name": "@lisnote/image-generator",
+  "name": "@majorcallisto/image-text-generator",
   "version": "1.0.0",
   "description": "A node module for generating random background gradients with text foregrounds",
   "main": "index.js",
