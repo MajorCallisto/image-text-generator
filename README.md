@@ -3,11 +3,11 @@
 # usage
 
 ```bash
-npm i @majorcallisto/image-text-generator
+npm i https://github.com/MajorCallisto/image-text-generator --save
 ```
 
 ```javascript
-const imageGenerator = require("@lisnote/image-generator");
+const imageGenerator = require("@majorcallisto/image-text-generator");
 
 for (let i = 0; i < 5; i++) {
   imageTextGenerator(640, 640, { fontSize: 96, wrapBreak: 8 }).toFile(

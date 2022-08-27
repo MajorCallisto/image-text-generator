@@ -1,6 +1,5 @@
 const sharp = require("sharp");
 const { generate } = require("generate-passphrase");
-const { isConstructorDeclaration } = require("typescript");
 
 const sharpDecorator = (width, height, textOptions) => {
   return sharp(bufferColorful(width, height, textOptions));
