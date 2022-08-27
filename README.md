@@ -2,11 +2,15 @@
 
 Some generated images
 
-![colorful1](./src/image/colorful1.svg)
+![sample_0](./sample/sample_0.svg)
 
-![colorful2](./src/image/colorful2.svg)
+![sample_1](./sample/sample_0.svg)
 
-![colorful3](./src/image/colorful3.svg)
+![sample_2](./sample/sample_0.svg)
+
+![sample_3](./sample/sample_0.svg)
+
+![sample_4](./sample/sample_0.svg)
 
 # usage
 
@@ -15,12 +19,11 @@ npm i @lisnote/image-generator
 ```
 
 ```javascript
-const imageGenerator = require("@lisnote/image-generator");
+const imageGenerator = require('@lisnote/image-generator');
 
-imageGenerator(1920, 1080)
-	.toFile("./test.png")
-imageGenerator(1920, 1080)
-	.toFile("./test.jpg")
-imageGenerator(1920, 1080)
-	.toFile("./test.webp")
+imageGenerator(1920, 1080).toFile('./test.png');
+
+for (let i = 0; i < 5; i++) {
+  imageTextGenerator(640, 640, { fontSize: 96, wrapBreak: 8 }).toFile(`./sample_${i}.png`);
+}
 ```
