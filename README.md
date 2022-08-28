@@ -1,19 +1,55 @@
 # A node module for generator random image
 
-# usage
+# Usage
+
+Install with the following:
 
 ```bash
 npm i https://github.com/MajorCallisto/image-text-generator --save
 ```
 
+### Generate 5 Local Files
+
 ```javascript
-const imageGenerator = require("@majorcallisto/image-text-generator");
+const imageTextGenerator = require("@majorcallisto/image-text-generator");
 
 for (let i = 0; i < 5; i++) {
   imageTextGenerator(640, 640, { fontSize: 96, wrapBreak: 8 }).toFile(
     `./sample_${i}.png`
   );
 }
+```
+
+### Use Express
+
+The following example uses express to serve a random image at the path /getSampleImage. This example uses sharp to serve a webp image.
+
+```javascript
+import express from "express";
+import imageTextGenerator from "@majorcallisto/image-text-generator";
+
+const app = express();
+const port = 8008;
+
+app.get("/getSampleImage", async (req, res) => {
+  return imageTextGenerator(640, 640, { fontSize: 96, wrapBreak: 8 })
+    .webp()
+    .toBuffer()
+    .then(data => {
+      res
+        .status(202)
+        .header("image/webp")
+        .end(data);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).send({ error: err });
+    });
+});
+
+app.listen(port, () => {
+  console.log(`API Initiated on ${port}`);
+});
 ```
 
 ## Options
