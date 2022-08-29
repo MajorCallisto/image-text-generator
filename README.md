@@ -5,7 +5,7 @@
 Install with the following:
 
 ```bash
-npm i https://github.com/MajorCallisto/image-text-generator --save
+npm i @majorcallisto/image-text-generator --save
 ```
 
 ### Generate 5 Local Files
