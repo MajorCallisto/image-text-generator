@@ -1,6 +1,6 @@
 {
   "name": "@majorcallisto/image-text-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A node module for generating random background gradients with text foregrounds",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,6 @@
   "author": "Christopher Lewis",
   "license": "MIT",
   "dependencies": {
-    "@majorcallisto/image-text-generator": "github:majorcallisto/image-text-generator",
     "generate-passphrase": "^1.2.0",
     "sharp": "^0.30.7"
   },
