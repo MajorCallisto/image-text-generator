@@ -17,7 +17,7 @@ const bufferColorful = (width, height, textOptions = {}) => {
   let lastPadding = yStart;
 
   const passPhrase =
-    text.length === 0
+    text === null || text.length === 0
       ? generate({
           length: passPhraseLength,
           separator: "-",
