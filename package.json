@@ -1,6 +1,6 @@
 {
   "name": "@majorcallisto/image-text-generator",
-  "version": "1.0.4sssssssssssss",
+  "version": "1.0.5",
   "description": "A node module for generating random background gradients with text foregrounds",
   "main": "index.js",
   "scripts": {
